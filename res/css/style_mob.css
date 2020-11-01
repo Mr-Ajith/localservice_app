@@ -1,0 +1,12 @@
+@media only screen and (max-device-width: 578px)
+{
+  body{
+    background-color: white;
+  }
+  .navbar{
+    background-color: #fef7ff;
+  }
+  #checktab{
+    display: none;
+  }
+}

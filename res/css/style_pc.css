@@ -1,0 +1,16 @@
+@media only screen and (min-device-width:1200px)
+{
+  body{
+    background-color: white;
+  }
+  .navbar{
+    background-color: #fef7ff;
+  }
+  .navbar li{
+    float: right;
+  }
+  #checkmob{
+    display: none;
+  }
+
+}
