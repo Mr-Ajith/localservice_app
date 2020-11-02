@@ -9,4 +9,17 @@
   #checktab{
     display: none;
   }
+  #one{
+     background-repeat: no-repeat;
+     background-size:cover;
+     overflow: hidden;
+  }
+  #one_right{
+    height: auto;
+    width: 50%;
+    float: right;
+  }
+  #one form{
+  margin-right: 20px;
+  }
 }

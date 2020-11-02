@@ -54,14 +54,17 @@ header("Refresh: ");
    </div>
 </nav>
 <br><br><br>
-<div id="one">
-  Do you need service? meet Project_1 <br>
-  <small>Get all types local services at maximum lowest price with 100% security</small>
-  <form id="checkmob" class="">
-    Check we are available to service at your location
-    <input class="" type="text" placeholder="enter pincode"  maxlength="6">
-    <button class="btn btn-outline-success" type="submit">check</button>
-  </form>
+<div id="one" style="background-image:url('asset/engineer.png');" >  <br><br><br>
+  <div id="one_right">
+    <form id="checkmob" class="">
+     <p>Check we are available to service at your location</p>
+      <input class="" type="text" placeholder="enter pincode"  maxlength="6"><br><br>
+      <button class="btn btn-outline-success" type="submit">check</button>
+    </form>  <br><br><br>
+  </div>
+</div>
+<div id="">
+
 </div>
   </body>
 </html>
