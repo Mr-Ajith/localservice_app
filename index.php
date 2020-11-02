@@ -74,6 +74,7 @@ header("Refresh: ");
  </div>
   </body>
 </html>
+
 <!--
 <svg viewBox="0 0 250 250">
    <path fill="#8A3FFC"
@@ -85,6 +86,5 @@ header("Refresh: ");
          font-size="1.5em"
          text-anchor="middle"
          alignment-baseline="middle">
-
    </text>
 </svg> -->
