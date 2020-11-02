@@ -18,8 +18,10 @@
     height: auto;
     width: 50%;
     float: right;
+    align-items: center;
   }
-  #one form{
-  margin-right: 20px;
+  #checkmob{
+    text-align:center;
   }
+
 }
