@@ -14,11 +14,12 @@ header("Refresh: ");
     <link rel="stylesheet" href="res/css/style_tab.css">
     <link rel="stylesheet" href="res/css/style_mob.css">
     <link rel="stylesheet" href="res/css/style_pc.css">
-    <script src="not_https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="res/jquerry-3.5.1.js"></script>
     <script src="res/bootstrap-4.5.3/js/bootstrap.bundle.js"></script>
     <title>Project_1</title>
   </head>
   <body>
+
                   <!--     navbar                     -->
 <nav class="navbar fixed-top navbar-expand-lg navbar-light">
   <a class="navbar-brand" href="#">Project_1</a>
@@ -48,12 +49,15 @@ header("Refresh: ");
         <a class="nav-link" href="#">about us</a>
       </li>
       <li class="nav-item">
-        <button type="button" class="btn btn-outline-success">login</button> &nbsp;&nbsp;
-        <button type="button" class="btn btn-outline-primary">sign up</button>
+        <button class="btn btn-dark" onclick="document.getElementById('login').style.display='block'" style="width:auto;">Login</button>&nbsp;&nbsp;
+        <button type="button" class="btn btn-dark">Sign UP</button>
       </li>
     </ul>
    </div>
-</nav>
+</nav> <script type="text/javascript">
+$('.nav-item').on('click', function () {
+   $('.navbar-toggler').click()});
+</script>
 <br><br><br>
 <div id="one" style="background-image:url('asset/engineer.png');" >  <br><br><br>
   <div id="one_right">
@@ -68,15 +72,31 @@ header("Refresh: ");
   <br><br>
   <form id="" class="">
    <p>Check we are available to service at your location</p>
-    <input class="" type="text" style=" border: 2px solid black;border-radius: 4px;" placeholder="enter pincode"  maxlength="6">
+    <input class="" type="text" style=" border: 2px solid black;border-radius: 4px;" placeholder=" Pincode"  maxlength="6">
     <button class="btn btn-dark" type="submit"><i class="fas fa-location-arrow"></i></button>
   </form><br><br>
  </div>
+    <div id="login" class="modal">
+        <form class="modal-content animate" action="validate_login.php">
+            <div class="container"><br>
+                <span onclick="document.getElementById('login').style.display='none'" class="close" title="Close Modal" style="cursor:pointer;">
+                <i class="fas fa-times" style="color:#8A3FFC;"></i></span>
+                <br><br>
+                <label><b>Username</b></label>
+                <input type="text" placeholder=" Username" name="uname" required><br>
+                <label><b>Password</b></label>
+                <input type="password" placeholder=" Password" name="pswd" required><br>
+                <button class="" type="submit">Login</button>
+            </div>
+                <p style="text-align:center;"><a href="#">Forgot password?</a></p><br>
+                <p style="text-align:center;"> OR </p><br>
+                <p style="text-align:center;"> <a href="#"> Sign UP Now</a> </p>
+        </form>
+    </div>
+
   </body>
 </html>
-
-<!--
-<svg viewBox="0 0 250 250">
+<!--<svg viewBox="0 0 250 250">
    <path fill="#8A3FFC"
          d="M39.7,21.7C26.7,45.3,-25.5,45.1,-38.7,21.3C-51.8,-2.4,-25.9,-49.8,0.2,-49.6C26.3,-49.5,52.6,-2,39.7,21.7Z" transform="translate(100 100)" />
 
@@ -87,4 +107,5 @@ header("Refresh: ");
          text-anchor="middle"
          alignment-baseline="middle">
    </text>
-</svg> -->
+</svg>
+-->
