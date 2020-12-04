@@ -1,50 +1,32 @@
 @media only screen and (max-device-width: 578px) {
   body {
     background-color: white;
+      font-family: 'Alata', sans-serif;
   }
 
   .navbar {
-    background-color: #fef7ff;
-  }
-
-  #checktab {
-    display: none;
+    background-color: white;
   }
 
   .btn {
-    border-radius:10px;
+    border-radius: 10px;
   }
 
   #one {
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size:contain;
     overflow: hidden;
-  }
-
-  #one_right {
-    height: auto;
-    width: 50%;
-    float: right;
-    align-items: center;
-  }
-
-  #checkmob {
     text-align: center;
-    background-color: #fefefe;
-    margin: 5% auto 5% auto;
-    width: 85%;
-    border-radius: 10px;
   }
 
-  #checkmob button {
-    background-color: black;
-    color: white;
-    padding: 14px 20px;
-    margin: 8px 0;
-    border: none;
-    cursor: pointer;
-    width: 100%;
-    border-radius: 10px;
+  #one h3 {
+    font-weight: bold;
+    text-align: center;
+    background-image: linear-gradient(to right, #2000f9, #5600f7, #7400f5, #8b00f4, #9f00f2, #9d04e8, #9b09de, #990ed5, #840bc1, #7007ad, #5d0399, #4b0085);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
   }
 
   #login input[type=text],

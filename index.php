@@ -24,10 +24,6 @@ header("Refresh: ");
   <!--     navbar                     -->
   <nav class="navbar fixed-top navbar-expand-lg navbar-light">
     <a class="navbar-brand" href="#">Project_1</a>
-    <form id="checktab" class="form-inline my-2 my-lg-0">
-      <input class="form-control mr-sm-2" type="text" placeholder="enter pincode" maxlength="6">
-      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">check</button>
-    </form>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="" role="button"> <i class="fas fa-align-left" style="color:black; font-size:28px;"></i></span>
     </button>
@@ -38,20 +34,17 @@ header("Refresh: ");
           <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">services</a>
+          <a class="nav-link" href="#">why Project_1?</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#">contact us</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">why Project_1?</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#">about us</a>
         </li>
         <li class="nav-item">
           <button class="btn" onclick="document.getElementById('login').style.display='block'" style="width:auto; background-color:black; color:white;">Login</button>&nbsp;&nbsp;
-          <button type="button" class="btn" style="background-color:black; color:white;">Sign UP</button>
+          <button type="button" class="btn" style="background-color:black; color:white;">Sign up</button>
         </li>
       </ul>
     </div>
@@ -62,29 +55,11 @@ header("Refresh: ");
     });
   </script>
   <br><br><br>
-  <div id="one" style="background-image:url('asset/engineer.png');"> <br><br>
-    <div id="one_right">
-      <h4><b> Any service,meet Project_1</b></h4><br>
-      <h6><i class="fas fa-shield-alt" style="font-size: 20px;color:#8A3FFC;"></i> 100% Secure</h6>
-      <h6><i class="fas fa-tools" style="font-size: 20px;color:#8A3FFC;"></i> All types of Services</h6>
-      <h6><i class="fas fa-headset" style="font-size: 20px;color:#8A3FFC;"></i> 24/7 Customer Support</h6>
-      <h6><i class="fas fa-money-check-alt" style="font-size: 20px;color:#8A3FFC;"></i> All types of Payment</h6>
-    </div>
-  </div>
-  <div id="checkmob"><br>
-    <form id="city" class="" action="city.php">
-      <div class="form-group">
-        <select name="city" class="form-control" id="">
-          <option selected>Select City</option>
-          <option value="Trivandrum">Trivandrum</option>
-          <option value="Kochi">Kochi</option>
-          <option value="Mumbai">Mumbai</option>
-          <option value="Delhi">Delhi</option>
-          <option value="Chennai">Chennai</option>
-        </select>
-      </div>
-      <button class="btn btn-dark" type="submit">Lets Go <i class="fas fa-angle-double-right"></i></button>
-    </form><br><br>
+  <div id="one" style="background-image:url('asset/nibr.png');"> <br><br>
+      <h3>connect to <del>globally</del> locally</h3><br>
+      <button class="btn" onclick="document.getElementById('login').style.display='block'" style="width:auto; background-color:black; color:white;">Login</button>&nbsp;&nbsp;
+      <button type="button" class="btn" style="background-color:black; color:white;">Sign up</button>
+      <br><br><br>
   </div>
   <div id="login" class="modal">
     <form class="modal-content animate" action="validate_login.php">
@@ -111,20 +86,8 @@ header("Refresh: ");
       }
     }
   </script>
-  <h3><?php echo htmlspecialchars($_SESSION["city"]); ?></h3>
+  everyone is busy and lack the relationship from neighbours,we offer you a platform
+  to connect locally.
 </body>
 
 </html>
-<!--<svg viewBox="0 0 250 250">
-   <path fill="#8A3FFC"
-         d="M39.7,21.7C26.7,45.3,-25.5,45.1,-38.7,21.3C-51.8,-2.4,-25.9,-49.8,0.2,-49.6C26.3,-49.5,52.6,-2,39.7,21.7Z" transform="translate(100 100)" />
-
-   <text x="63"
-         y="60"
-         fill="white"
-         font-size="1.5em"
-         text-anchor="middle"
-         alignment-baseline="middle">
-   </text>
-</svg>
--->
