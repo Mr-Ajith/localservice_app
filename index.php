@@ -55,11 +55,15 @@ header("Refresh: ");
     });
   </script>
   <br><br><br>
-  <div id="one" style="background-image:url('asset/nibr.png');"> <br><br>
-      <h3>connect to <del>globally</del> locally</h3><br>
-      <button class="btn" onclick="document.getElementById('login').style.display='block'" style="width:auto; background-color:black; color:white;">Login</button>&nbsp;&nbsp;
-      <button type="button" class="btn" style="background-color:black; color:white;">Sign up</button>
-      <br><br><br>
+  <div id="one" style="background-image:url('asset/nibr.png');">
+    <div id="one_m">
+      <br>
+        <h3>connect to <del>globally</del> locally</h3><br>
+        <button class="btn" onclick="document.getElementById('login').style.display='block'" style="width:auto; background-color:#4A527C; color:white;">Login</button>&nbsp;
+        OR &nbsp;
+        <button type="button" class="btn" style="background-color:#4A527C; color:white;">Sign up</button>
+        <br><br><br>
+    </div>
   </div>
   <div id="login" class="modal">
     <form class="modal-content animate" action="validate_login.php">
@@ -86,6 +90,16 @@ header("Refresh: ");
       }
     }
   </script>
+  <div id="features">
+     <div class="feture">
+       <div class="feature_left">
+       <img src="asset/world.png" alt="">
+       </div>
+       <div class="feature_right">
+
+       </div>
+     </div>
+  </div>
   everyone is busy and lack the relationship from neighbours,we offer you a platform
   to connect locally.
 </body>

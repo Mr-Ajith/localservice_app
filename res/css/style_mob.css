@@ -1,7 +1,7 @@
 @media only screen and (max-device-width: 578px) {
   body {
     background-color: white;
-      font-family: 'Alata', sans-serif;
+    font-family: 'Alata', sans-serif;
   }
 
   .navbar {
@@ -14,19 +14,29 @@
 
   #one {
     background-repeat: no-repeat;
-    background-size:contain;
+    background-size: contain;
     overflow: hidden;
     text-align: center;
+  }
+  #one_m{
+    margin-top: 50%;
   }
 
   #one h3 {
     font-weight: bold;
     text-align: center;
-    background-image: linear-gradient(to right, #2000f9, #5600f7, #7400f5, #8b00f4, #9f00f2, #9d04e8, #9b09de, #990ed5, #840bc1, #7007ad, #5d0399, #4b0085);
+    background-image: linear-gradient(to right, #00d3ff, #00bbf4, #00a2e8, #0089d8, #0070c5, #2766c4, #405bc1, #554ebb, #7f4ac4, #a741c8, #cd30c6, #f200be);
+    background-size: 100%;
     -webkit-background-clip: text;
     -moz-background-clip: text;
     -webkit-text-fill-color: transparent;
     -moz-text-fill-color: transparent;
+  }
+
+  #one del {
+    text-decoration: line-through;
+    font-style: italic;
+    color: black;
   }
 
   #login input[type=text],
