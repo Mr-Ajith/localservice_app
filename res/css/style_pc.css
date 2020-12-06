@@ -1,13 +1,54 @@
-@media only screen and (min-device-width:1200px)
-{
-  body{
+@media only screen and (min-device-width:1200px) {
+  body {
+    background-color: white font-family: 'Alata', sans-serif;
+  }
+
+  .navbar {
     background-color: white;
   }
-  .navbar{
-    background-color: #fef7ff;
+
+  .navbar-brand {
+    font-weight: bold;
+    text-align: center;
+    background-image: linear-gradient(to right, #00d3ff, #00bbf4, #00a2e8, #0089d8, #0070c5, #2766c4, #405bc1, #554ebb, #7f4ac4, #a741c8, #cd30c6, #f200be);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
   }
-  .navbar li{
+
+  #one {
+    background-repeat: no-repeat;
+    background-size: contain;
+    overflow: hidden;
+    text-align: center;
+  }
+
+  #one_m {
+    display: none;
+  }
+
+  #one_r {
+    width: 50%;
     float: right;
+    align-items: center;
+  }
+  #one h3 {
+    font-weight: bold;
+    text-align: center;
+    background-image: linear-gradient(to right, #00d3ff, #00bbf4, #00a2e8, #0089d8, #0070c5, #2766c4, #405bc1, #554ebb, #7f4ac4, #a741c8, #cd30c6, #f200be);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+  }
+
+  #one del {
+    text-decoration: line-through;
+    font-style: italic;
+    color: black;
   }
 
 }

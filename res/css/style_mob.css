@@ -11,14 +11,26 @@
   .btn {
     border-radius: 10px;
   }
-
+  .navbar-brand {
+    font-weight: bold;
+    text-align: center;
+    background-image: linear-gradient(to right, #00d3ff, #00bbf4, #00a2e8, #0089d8, #0070c5, #2766c4, #405bc1, #554ebb, #7f4ac4, #a741c8, #cd30c6, #f200be);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+  }
   #one {
     background-repeat: no-repeat;
     background-size: contain;
     overflow: hidden;
     text-align: center;
   }
-  #one_m{
+#one_r{
+  display: none;
+}
+  #one_m {
     margin-top: 50%;
   }
 
@@ -113,4 +125,16 @@
       transform: scale(1)
     }
   }
+
+#features h5 {
+  font-weight: bold;
+  text-align: center;
+  background-image: linear-gradient(to right, #00d3ff, #00bbf4, #00a2e8, #0089d8, #0070c5, #2766c4, #405bc1, #554ebb, #7f4ac4, #a741c8, #cd30c6, #f200be);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}
+
 }

@@ -34,7 +34,7 @@ header("Refresh: ");
           <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">why Project_1?</a>
+          <a class="nav-link" href="#features">why Project_1?</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#">contact us</a>
@@ -43,8 +43,8 @@ header("Refresh: ");
           <a class="nav-link" href="#">about us</a>
         </li>
         <li class="nav-item">
-          <button class="btn" onclick="document.getElementById('login').style.display='block'" style="width:auto; background-color:black; color:white;">Login</button>&nbsp;&nbsp;
-          <button type="button" class="btn" style="background-color:black; color:white;">Sign up</button>
+          <button class="btn" onclick="document.getElementById('login').style.display='block'" style="width:auto; background-color:#4A527C; color:white;">Login</button>&nbsp;&nbsp;
+          <button type="button" class="btn" style="background-color:#4A527C; color:white;">Sign up</button>
         </li>
       </ul>
     </div>
@@ -64,6 +64,26 @@ header("Refresh: ");
         <button type="button" class="btn" style="background-color:#4A527C; color:white;">Sign up</button>
         <br><br><br>
     </div>
+      <div id="one_r">
+      <br><br>
+        <form id="login" action="auth.php" method="post">
+          <i class="fa fa-user-circle" style="font-size:20px;"></i>&nbsp;
+          <input type="text" name="email" placeholder="Email" value="" required><br><br>
+          <i class="fa fa-lock" style="font-size:20px;"></i>&nbsp;
+          <input type="password" name="password" placeholder="Password" value="" required><br><br>
+          <button type="submit" class="btn btn-outline-secondary" name="button">Login</button><br>
+          <?php
+                     if(isset($_SESSION["error"])){
+                         $error = $_SESSION["error"];
+                         echo "<span style='color:red;'>$error</span>";
+                     }
+                 ?>
+        </form><br><br>
+        <h3>connect to <del>globally</del> locally</h3><br>
+        don't have an account Sign Up now!
+        <button type="button" class="btn btn-outline-secondary" name="button"> <a href="signup.php">Sign Up</a> </button>
+
+    </div>
   </div>
   <div id="login" class="modal">
     <form class="modal-content animate" action="validate_login.php">
@@ -75,7 +95,7 @@ header("Refresh: ");
         <input type="text" placeholder=" Username" name="uname" required><br>
         <label><b>Password</b></label>
         <input type="password" placeholder=" Password" name="pswd" required><br>
-        <button class="" type="submit">Login</button>
+        <button class="" type="submit" style="background-color:#4A527C;">Login</button>
       </div>
       <p style="text-align:center;"><a href="#">Forgot password?</a></p>
       <p style="text-align:center;"> OR </p>
@@ -91,17 +111,33 @@ header("Refresh: ");
     }
   </script>
   <div id="features">
-     <div class="feture">
-       <div class="feature_left">
-       <img src="asset/world.png" alt="">
-       </div>
-       <div class="feature_right">
-
-       </div>
-     </div>
+    <div class="card-deck">
+      <div class="card">
+        <img src="asset/world.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Connect Locally</h5>
+          <p class="card-text">In this busy world we forget to connect with neighbours,now that will never happen again.</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="asset/location.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Anything @ Fast</h5>
+          <p class="card-text">With our community service you can find services,addresses etc nearyou very fast.</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="asset/fake.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">No more fake profiles</h5>
+          <p class="card-text">Our community profile verification process helps to avoid fake profiles.</p>
+        </div>
+      </div>
+    </div>
   </div>
-  everyone is busy and lack the relationship from neighbours,we offer you a platform
-  to connect locally.
+  <footer>
+
+  </footer>
 </body>
 
 </html>
