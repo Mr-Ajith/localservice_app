@@ -66,7 +66,7 @@ header("Refresh: ");
     </div>
       <div id="one_r">
       <br><br>
-        <form id="login" action="auth.php" method="post">
+        <form id="user_login" action="auth.php" method="post">
           <i class="fa fa-user-circle" style="font-size:20px;"></i>&nbsp;
           <input type="text" name="email" placeholder="Email" value="" required><br><br>
           <i class="fa fa-lock" style="font-size:20px;"></i>&nbsp;
@@ -82,7 +82,6 @@ header("Refresh: ");
         <h3>connect to <del>globally</del> locally</h3><br>
         don't have an account Sign Up now!
         <button type="button" class="btn btn-outline-secondary" name="button"> <a href="signup.php">Sign Up</a> </button>
-
     </div>
   </div>
   <div id="login" class="modal">
